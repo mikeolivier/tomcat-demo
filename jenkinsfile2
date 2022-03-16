@@ -18,6 +18,5 @@ node {
     stage("SonarQube analysis") {
           withSonarQubeEnv('SonarQube') 
             sh '${mvnHome}/bin/mvn sonar:sonar'
-     }
+        }
    }
-}
